@@ -1,1 +1,1 @@
-A few html projects i did hile studying html
+A few html projects i did while studying html
