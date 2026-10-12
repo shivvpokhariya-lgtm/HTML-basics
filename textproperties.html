@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Properties</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+
+        .color        { color: crimson; }
+        .align-left   { text-align: left; }
+        .align-center { text-align: center; }
+        .align-right  { text-align: right; }
+        .align-justify { text-align: justify; }
+        .align-last   { text-align: justify; text-align-last: center; }
+
+        /* ---------- Text decoration ---------- */
+        .deco-underline   { text-decoration: underline; }
+        .deco-overline    { text-decoration: overline; }
+        .deco-linethrough { text-decoration: line-through; }
+        .deco-full {
+            text-decoration-line: underline overline;
+            text-decoration-color: red;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 6px;
+        }
+     </style>
+     </head>
+     <body>
+        <h1>CSS Text Properties</h1>
+        <p class="color">This text is crimson.</p>
+        <p class="align-left">This text is aligned to the left.</p>
+        <p class="align-center">This text is centered.</p>
+        <p class="align-right">This text is aligned to the right.</p>
+        <p class="align-justify">This text is justified. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="align-last">This text is justified with the last line centered. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <h2>Text Decoration</h2>
+        <p class="deco-underline">This text has an underline.</p>
+        <p class="deco-overline">This text has an overline.</p>
+        <p class="deco-linethrough">This text has a line-through.</p>
+        <p class="deco-full">This text has multiple decorations: underline and overline with custom color, style, thickness, and offset.</p>
+
+</body>
+</html>
