@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: url("position-photo.jpg") no-repeat center center;
+            background-size: cover;
+        }
+
+        .name {
+            position: absolute;
+            color: rgb(23, 155, 203);
+            font-family: Arial, sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+            padding: 8px 14px;
+            background: transparent;
+            border-radius: 6px;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        .top-left      { top: 20px; left: 20px; }
+        .top-middle    { top: 20px; left: 50%; transform: translateX(-50%); }
+        .top-right     { top: 20px; right: 20px; }
+
+        .middle-left   { top: 50%; left: 20px; transform: translateY(-50%); }
+        .middle-centre { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .middle-right  { top: 50%; right: 20px; transform: translateY(-50%); }
+
+        .bottom-left   { bottom: 20px; left: 20px; }
+        .bottom-centre { bottom: 20px; left: 50%; transform: translateX(-50%); }
+        .bottom-right  { bottom: 20px; right: 20px; }
+    </style>
+</head>
+<body>
+    <div class="name top-left">Shivansh Singh</div>
+    <div class="name top-middle">Shivansh Singh</div>
+    <div class="name top-right">Shivansh Singh</div>
+
+    <div class="name middle-left">Shivansh Singh</div>
+    <div class="name middle-centre">Shivansh Singh</div>
+    <div class="name middle-right">Shivansh Singh</div>
+
+    <div class="name bottom-left">Shivansh Singh</div>
+    <div class="name bottom-centre">Shivansh Singh</div>
+    <div class="name bottom-right">Shivansh Singh</div>
+</body>
+</html>
