@@ -7,7 +7,7 @@
     <style>
         .flex-container {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
             height: 111 0px;
@@ -35,10 +35,13 @@
 
 <body>
 <h1> CREATE FLEX container </h1>    
-<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; height: 200px; border: 1px solid black;">
-    <div style="background-color: rgb(11, 73, 94); width: 100px; height: 100px;">Item 1</div>
-    <div style="background-color: lightgreen; width: 100px; height: 100px;">Item 2</div>
-    <div style="background-color: lightcoral; width: 100px; height: 100px;">Item 3</div>
+/* set the .container flex direction to column and justify content to center */
+<div class="flex-container">
+    <div class="flex-item item1">Item 1</div>
+    <div class="flex-item item2">Item 2</div>
+    <div class="flex-item item3">Item 3</div>
+</div>
+
 <p> flex box   must have a parent container with display: flex;</p>
 </body>
 </html>
