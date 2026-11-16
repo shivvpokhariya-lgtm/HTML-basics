@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .big-box {
+            width: 500px;
+            height: 400px;
+            background-color: blue;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .small-box {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 20px;
+        }
+
+        .label {
+            position: absolute;
+            color: white;
+            font-weight: bold;
+        }
+
+        .big-label {
+            top: 16px;
+            right: 20px;
+            font-size: 24px;
+        }
+
+        .small-label {
+            top: 12px;
+            right: 16px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big-box">
+        <span class="label big-label">Div</span>
+        <div class="small-box">
+            <span class="label small-label">Div</span>
+        </div>
+    </div>
+</body>
+</html>
